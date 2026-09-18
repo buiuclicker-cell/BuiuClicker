@@ -1,0 +1,55 @@
+{
+  "expo": {
+    "name": "Buiu Clicker",
+    "slug": "buiu-clicker",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FFFF00"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.buiu.clicker"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFF00"
+      },
+      "package": "com.buiu.clicker",
+      "permissions": [
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "READ_MEDIA_IMAGES"
+      ]
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Precisa acessar suas fotos pra vc escolher sua foto de perfil no Buiu Clicker!",
+          "cameraPermission": "Precisa da camera pra tirar foto pra o Buiu Clicker!"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "scheme": "buiu-clicker",
+    "extra": {
+      "eas": {
+        "projectId": "buiu-clicker"
+      }
+    }
+  }
+}
